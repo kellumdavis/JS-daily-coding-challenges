@@ -13,9 +13,12 @@ sayHello() //=> Hello!
 -----------------------------------------------------------------*/
 // Your solution for 00-sayHello (example) here:
 
+// function sayHello() {
+//   console.log("Hello!")
+//   return
+// };
 
-
-
+// sayHello();
 /*-----------------------------------------------------------------
 Challenge: 01-addOne
 
@@ -31,7 +34,13 @@ addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
+// function addOne(num){
+//   num++
+//   console.log(num)
+//   return 
+// };
 
+// addOne(5);
 
 
 
@@ -44,7 +53,7 @@ Prompt:
 
 Write a function called addTwoNumbers that accepts two numeric arguments and returns the sum of those two numbers.
 If either argument is not a Number, return the value of NaN.
-
+function
 
 
 
@@ -56,8 +65,25 @@ addTwoNumbers(0, 0) //=> 0
 addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
+// function addTwoNumbers(num1,num2){
+//   sum = num1 + num2;
+// if(num1 + num2 <= 1000000000){
+//   console.log(sum)
+// } else{
+//   console.log(NaN)
+// }};
+ 
 
-
+// function addTwoNumbers(num1,num2){
+//   if(isNaN(num1)){
+//     console.log(NaN); }
+//    else if(isNaN(num2)){
+//       console.log(NaN);
+//   }else{
+//     console.log(num1 + num2)
+//   }return
+// };
+// console.log(addTwoNumbers(5,5));
 
 
 
@@ -80,8 +106,20 @@ sumNumbers([2, 10, -5]) //=> 7
 sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
+function sumNumbers(array){
+  
+  if(array === []){
+    return 0;
+  }else{
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+      console.log(sum)
+    }
+  }
 
-
+}
+sumNumbers([5,6,7]);
 
 
 
